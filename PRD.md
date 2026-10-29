@@ -1,6 +1,6 @@
 # PRD — Same 18A, Different You
 
-**Owner:** Likhit Midithana · **Status:** v1 shipped (film and website) · **Date:** 29 Oct 2026
+**Owner:**1.Likhit Midithana,2.Mustafiz Ahmed · **Status:** v1 shipped (film and website) · **Date:** 29 Oct 2026
 
 ## 1. Problem
 Intel Core Ultra Series 3 (Panther Lake) and Intel Core Series 3 (Wildcat Lake) are both built on Intel 18A, but they serve different users. Buyers find the difference confusing. The names differ by one word, and spec sheets don't say who each chip is for.
