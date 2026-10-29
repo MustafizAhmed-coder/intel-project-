@@ -41,7 +41,7 @@ The exact command depends on the repository's entry point and whether the Python
    cd <project-folder>
 2. Open a terminal in the directory containing the main index.html file and start a local server:
    python -m http.server 8000
-3. Open http://127.0.0.1:8000 in your browser.
+3. Open https://website-beige-one-70.vercel.app/ in your browser.
 This command serves static files only. If the project uses Python for an API or other backend behaviour, start that component using the command and dependencies defined in the repository; those details should be documented here once confirmed.
 Project structure
 The following is a suggested structure for a small HTML/CSS/JavaScript application. Adjust it to match the actual repository:
