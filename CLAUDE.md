@@ -22,8 +22,8 @@ video/
   gsap.min.js             local GSAP 3 used by video.html
   Same18A_DifferentYou_1080p.mp4   final film (34.3 s, 1920×1080, 30 fps)
 website/
-  index.html              GSAP + ScrollTrigger + Lenis site
-  film.mp4                720p web copy of the film, referenced as "film.mp4"
+  app/                    Next.js app (page.jsx markup, effects.jsx GSAP + ScrollTrigger + Lenis)
+  public/film.mp4         720p web copy of the film, served at /film.mp4
 ```
 
 ## Commands
@@ -38,7 +38,7 @@ cd video && python3 render_fast.py
 ffmpeg -y -f lavfi -i "aevalsrc='0.10*sin(2*PI*110*t)*(0.6+0.4*sin(2*PI*0.25*t))+0.07*sin(2*PI*164.81*t)+0.06*sin(2*PI*220*t)*(0.5+0.5*sin(2*PI*0.5*t))+0.04*sin(2*PI*261.63*t)+0.03*sin(2*PI*329.63*t)*(0.5+0.5*sin(2*PI*0.125*t))':s=48000:d=34.3" -af "lowpass=f=1800,afade=t=in:d=2,afade=t=out:st=31.5:d=2.8,aecho=0.8:0.7:400:0.3" pad.wav
 
 # Serve the website locally
-cd website && python3 -m http.server 8000
+cd website && npm install && npm run dev
 ```
 Requirements: Python 3 with `playwright` (Chromium installed), ffmpeg, and the Inter font for the video.
 
